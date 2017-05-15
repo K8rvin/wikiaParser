@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechProgr", "TechProgr\TechProgr.csproj", "{26A486C7-E557-4F54-B40B-2F9948874F95}"
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wikiaParser", "TechProgr\wikiaParser.csproj", "{26A486C7-E557-4F54-B40B-2F9948874F95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wikiaParser.Tests", "wikiaParser.Tests\wikiaParser.Tests.csproj", "{9EDE8790-735F-44A1-B037-EFE5C2799F54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +17,10 @@ Global
 		{26A486C7-E557-4F54-B40B-2F9948874F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26A486C7-E557-4F54-B40B-2F9948874F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26A486C7-E557-4F54-B40B-2F9948874F95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EDE8790-735F-44A1-B037-EFE5C2799F54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EDE8790-735F-44A1-B037-EFE5C2799F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EDE8790-735F-44A1-B037-EFE5C2799F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EDE8790-735F-44A1-B037-EFE5C2799F54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

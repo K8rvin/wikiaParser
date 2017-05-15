@@ -21,3 +21,6 @@ E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\TechProgr\TechProgr\bin\De
 E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\lab 1\TechProgr\TechProgr\bin\Debug\TechProgr.exe.config
 E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\lab 1\TechProgr\TechProgr\obj\Debug\TechProgr.exe
 E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\lab 1\TechProgr\TechProgr\obj\Debug\TechProgr.pdb
+E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\lab 3\wikiaParser\TechProgr\bin\Debug\TechProgr.exe.config
+E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\lab 3\wikiaParser\TechProgr\obj\Debug\TechProgr.exe
+E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\lab 3\wikiaParser\TechProgr\obj\Debug\TechProgr.pdb

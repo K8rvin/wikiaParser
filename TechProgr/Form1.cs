@@ -3,17 +3,17 @@ using System.Text;
 using System.Windows.Forms;
 using System.Net;
 using System.IO;
-using System.Text.RegularExpressions;
-using NUnit.Framework;
+using System.Collections.Generic;
 
-namespace TechProgr
+namespace wikiaParser
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
-            comboBox1.SelectedIndex = 4;            
+            comboBox1.SelectedIndex = 4;
+            tabControl1.SelectedIndex = 1; 
         }
 
         private void buttonFind_Click(object sender, EventArgs e)
@@ -47,39 +47,17 @@ namespace TechProgr
             textBox2.Text = output.ToString();
             textBox3.Text = "";
 
-            Parser p = new Parser();
-            textBox3.Text = p.Parsing(output.ToString(), "data-pos=(.+)");
-        }        
-    }
+            Parser p = new Parser(output.ToString(), "data-pos=(.+)");
+            List<string> l = p.Parsing();
+            for (int i =0; i< l.Count; i++ )
+                textBox3.AppendText(l[i]);            
+            textBox3.SelectionStart = 0;
+            textBox3.ScrollToCaret();
 
-    public class Parser
-    {
-        public String Parsing(string Http, string regexS)
-        {
-            String result = "";
-            Regex Regex = new Regex(regexS);
-            Match match = Regex.Match(Http);
-            // отображаем все совпадения
-            while (match.Success)
-            {
-                // Т.к. мы выделили в шаблоне одну группу (одни круглые скобки),
-                // ссылаемся на найденное значение через свойство Groups класса Match
-                result += RemoveDetails(match.Groups[0].Value);                
-                // Переходим к следующему совпадению
-                match = match.NextMatch();
-            }
-            return result;
         }
+    }    
 
-        public String RemoveDetails(String match)
-        {            
-            return match.Replace("</a>", "").Replace("</li>", "").Replace("data-pos=", "").
-                    Replace("</b><!--", "").Replace("comment to remove whitespace", "[Лучшие статьи]").
-                    Replace("data-event=\"search_click_match\"", "[Точное совпадение]").Replace(">", " ") + Environment.NewLine;
-        }
-    }
-
-    [TestFixture]
+    /*[TestFixture]
     public class ParserTestCase
     {
         [Test]
@@ -126,5 +104,5 @@ namespace TechProgr
             Assert.AreEqual("\"1\" [Точное совпадение]  Гарри\r\r\n\"1\" [Точное совпадение]  http://ru.harrypotter.wikia.com/wiki/Гарри\r\n", p.Parsing(HTML, "data-pos=(.+)"));
         }
 
-    }
+    }*/
 }
