@@ -54,7 +54,7 @@ namespace wikiaParser
             textBox3.SelectionStart = 0;
             textBox3.ScrollToCaret();
 
-            List<string> links = p.GetLinks();
+            List<string> links = p.GetLinks(l);
         }
     }    
 

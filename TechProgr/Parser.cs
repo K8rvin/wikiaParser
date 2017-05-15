@@ -66,11 +66,11 @@ namespace wikiaParser
         }
 
         //вытащить все ссылки
-        public List<string> GetLinks()
+        public List<string> GetLinks(List<string> ResultAfterParsing)
         {
             List<string> Links = new List<string>();
             Regex Regex = new Regex("http(.+)");
-            string resultString = string.Join(Environment.NewLine, SearchResult.ToArray());
+            string resultString = string.Join(Environment.NewLine, ResultAfterParsing.ToArray());
             Match match = Regex.Match(resultString);
 
             // отображаем все совпадения
