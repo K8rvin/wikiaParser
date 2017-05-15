@@ -1,0 +1,23 @@
+C:\Users\Student\Desktop\Lab\TechProgr\TechProgr\bin\Debug\TechProgr.exe.config
+C:\Users\Student\Desktop\Lab\TechProgr\TechProgr\bin\Debug\TechProgr.exe
+C:\Users\Student\Desktop\Lab\TechProgr\TechProgr\bin\Debug\TechProgr.pdb
+C:\Users\Student\Desktop\Lab\TechProgr\TechProgr\obj\Debug\TechProgr.csprojResolveAssemblyReference.cache
+C:\Users\Student\Desktop\Lab\TechProgr\TechProgr\obj\Debug\TechProgr.Properties.Resources.resources
+C:\Users\Student\Desktop\Lab\TechProgr\TechProgr\obj\Debug\TechProgr.csproj.GenerateResource.Cache
+C:\Users\Student\Desktop\Lab\TechProgr\TechProgr\obj\Debug\TechProgr.exe
+C:\Users\Student\Desktop\Lab\TechProgr\TechProgr\obj\Debug\TechProgr.pdb
+C:\Users\Student\Desktop\Lab\TechProgr\TechProgr\obj\Debug\TechProgr.Form1.resources
+E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\TechProgr\TechProgr\bin\Debug\TechProgr.exe.config
+E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\TechProgr\TechProgr\obj\Debug\TechProgr.exe
+E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\TechProgr\TechProgr\obj\Debug\TechProgr.pdb
+E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\TechProgr\TechProgr\bin\Debug\TechProgr.exe
+E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\TechProgr\TechProgr\bin\Debug\TechProgr.pdb
+E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\TechProgr\TechProgr\obj\Debug\TechProgr.csprojResolveAssemblyReference.cache
+E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\TechProgr\TechProgr\obj\Debug\TechProgr.Form1.resources
+E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\TechProgr\TechProgr\obj\Debug\TechProgr.Properties.Resources.resources
+E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\TechProgr\TechProgr\obj\Debug\TechProgr.csproj.GenerateResource.Cache
+E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\TechProgr\TechProgr\bin\Debug\nunit.framework.dll
+E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\TechProgr\TechProgr\bin\Debug\nunit.framework.xml
+E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\lab 1\TechProgr\TechProgr\bin\Debug\TechProgr.exe.config
+E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\lab 1\TechProgr\TechProgr\obj\Debug\TechProgr.exe
+E:\УНИВЕР\курс 5 лето\ТЕХ ПРОГР\lab 1\TechProgr\TechProgr\obj\Debug\TechProgr.pdb
