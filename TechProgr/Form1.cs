@@ -54,46 +54,13 @@ namespace wikiaParser
             textBox3.SelectionStart = 0;
             textBox3.ScrollToCaret();
 
+            List<string> links = p.GetLinks();
         }
     }    
 
     /*[TestFixture]
     public class ParserTestCase
     {
-        [Test]
-        public void testTrue()
-        {
-            Parser p = new Parser();
-            string HTML = "";
-            Assert.AreEqual("", p.Parsing(HTML, "data-pos=(.+)"));            
-        }
-
-        [Test]
-        public void testFalse()
-        {
-            Parser p = new Parser();
-            string HTML = "";
-            Assert.AreEqual("1", p.Parsing(HTML, "data-pos=(.+)"));            
-        }
-
-        [Test]
-        public void testFirstFind()
-        {
-            Parser p = new Parser();
-            string HTML = "<h1> < a href = class=\"result-link\" data-pos=\"1\" data-event=\"search_click_match\" >Гарри</a> ";
-            Assert.AreEqual("\"1\" [Точное совпадение]  Гарри \r\n", p.Parsing(HTML, "data-pos=(.+)"));            
-        }
-
-        [Test]
-        public void testFullFind()
-        {
-            Parser p = new Parser();
-            string HTML = "< a href = \"http://ru.harrypotter.wikia.com/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8\" class=\"result-link\" data-pos=\"1\" data-event=\"search_click_match\" >Гарри</a>" + Environment.NewLine +
-                "Гарри Поттер — самый знаменитый студент Хогвартса за последние сто лет., Гарри Тригг — волшебник, пропавший без вести в 1997 году.В реальном мире Гарри Меллинг — актёр, исполнивший роль Дадли Дурсля&hellip;" + Environment.NewLine +
-                "<li><a href=\"http://ru.harrypotter.wikia.com/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8\" class=\"result-link\" data-pos=\"1\" data-event=\"search_click_match\" >http://ru.harrypotter.wikia.com/wiki/Гарри</a></li>";
-            Assert.AreEqual("\"1\" [Точное совпадение]  Гарри\r\r\n\"1\" [Точное совпадение]  http://ru.harrypotter.wikia.com/wiki/Гарри\r\n", p.Parsing(HTML, "data-pos=(.+)"));
-        }
-
         [Test]
         public void testTwoFinds()
         {

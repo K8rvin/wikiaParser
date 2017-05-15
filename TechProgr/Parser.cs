@@ -34,8 +34,11 @@ namespace wikiaParser
                 // Переходим к следующему совпадению
                 match = match.NextMatch();
             }
-            CheckExactMatch();
-            CheckNumberMatches();
+            if (SearchResult.Count != 0)
+            {
+                CheckExactMatch();
+                CheckNumberMatches();
+            }
             return SearchResult;
         }
 
@@ -60,6 +63,27 @@ namespace wikiaParser
                 SearchResult.Insert(0, "Найдено мало совпадений..." + Environment.NewLine);
             else 
                 SearchResult.Insert(0, "Найдено много совпадений :)" + Environment.NewLine);
+        }
+
+        //вытащить все ссылки
+        public List<string> GetLinks()
+        {
+            List<string> Links = new List<string>();
+            Regex Regex = new Regex("http(.+)");
+            string resultString = string.Join(Environment.NewLine, SearchResult.ToArray());
+            Match match = Regex.Match(resultString);
+
+            // отображаем все совпадения
+            while (match.Success)
+            {
+                // Т.к. мы выделили в шаблоне одну группу (одни круглые скобки),
+                // ссылаемся на найденное значение через свойство Groups класса Match
+                //result += RemoveDetails(match.Groups[0].Value);
+                Links.Add(match.Groups[0].Value);
+                // Переходим к следующему совпадению
+                match = match.NextMatch();
+            }            
+            return Links;
         }
     }
 }
